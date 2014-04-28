@@ -583,7 +583,9 @@ _onScrollBarMouseDown: function (event) {
 },
 
 _onMouseScroll: function (event) {
-    var now = new Date(), evt = event.originalEvent;
+    var now = new Date(),
+        evt = event.originalEvent,
+        innerFrame = event.currentTarget;
     now = now.getTime();
 
     if (!this._lastScrollTime || ((now - this._lastScrollTime) > 50)) {
