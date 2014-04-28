@@ -173,7 +173,7 @@ $.extend(Timeline.OverviewEventPainter.prototype, {
         var width = right - left;
         var height = metrics.trackHeight;
 
-        var tapeDiv = $("div class='timeline-small-event-tape" + (klassName ? " small-" + klassName : "") + "'/>")
+        var tapeDiv = $("<div class='timeline-small-event-tape" + (klassName ? " small-" + klassName : "") + "'/>")
             .css({
                 left: left + "px",
                 width: width + "px",
